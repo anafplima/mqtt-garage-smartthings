@@ -14,7 +14,7 @@ client.on('connect', () => {
   client.subscribe('garage/state/update')
 
   // Inform controllers that garage is connected
-  // client.publish('garage/connected', 'true')
+  client.publish('garage/connected', 'true')
   sendStateUpdate()
 })
 
